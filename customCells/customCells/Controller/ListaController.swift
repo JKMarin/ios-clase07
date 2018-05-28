@@ -24,7 +24,7 @@ class ListaController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LabelCell", for: indexPath) as! FavoritoTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "myCustomCell", for: indexPath) as! FavoritoTableViewCell
         
         let equipo = listado.equiposlist[indexPath.row]
         cell.lblNombre?.text = equipo.nombre
